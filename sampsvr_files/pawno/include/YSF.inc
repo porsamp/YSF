@@ -326,30 +326,6 @@ native GetVehicleMatrix(vehicleid, &Float:rightX, &Float:rightY = 0.0, &Float:ri
 native GetVehicleModelCount(modelid);
 native GetVehicleModelsUsed();
 
-// Gangzones - Global
-native IsValidGangZone(zoneid);
-native IsPlayerInGangZone(playerid, zoneid);
-native IsGangZoneVisibleForPlayer(playerid, zoneid);
-native GangZoneGetColorForPlayer(playerid, zoneid);
-native GangZoneGetFlashColorForPlayer(playerid, zoneid);
-native IsGangZoneFlashingForPlayer(playerid, zoneid);
-native GangZoneGetPos(zoneid, &Float:fMinX, &Float:fMinY = 0.0, &Float:fMaxX = 0.0, &Float:fMaxY = 0.0);
-
-// Gangzones - Player
-native CreatePlayerGangZone(playerid, Float:minx, Float:miny, Float:maxx, Float:maxy);
-native PlayerGangZoneDestroy(playerid, zoneid);
-native PlayerGangZoneShow(playerid, zoneid, color);
-native PlayerGangZoneHide(playerid, zoneid);
-native PlayerGangZoneFlash(playerid, zoneid, color);
-native PlayerGangZoneStopFlash(playerid, zoneid);
-native IsValidPlayerGangZone(playerid, zoneid);
-native IsPlayerInPlayerGangZone(playerid, zoneid);
-native IsPlayerGangZoneVisible(playerid, zoneid);
-native PlayerGangZoneGetColor(playerid, zoneid);
-native PlayerGangZoneGetFlashColor(playerid, zoneid);
-native IsPlayerGangZoneFlashing(playerid, zoneid);
-native PlayerGangZoneGetPos(playerid, zoneid, &Float:fMinX, &Float:fMinY = 0.0, &Float:fMaxX = 0.0, &Float:fMaxY = 0.0);
-
 // Textdraw - Global
 native IsValidTextDraw(Text:textdrawid);
 native IsTextDrawVisibleForPlayer(playerid, Text:textdrawid);
